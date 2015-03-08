@@ -11,7 +11,7 @@ and setup on home network, 3 main access points, 172ar_gnd, 172ar_mid and 172ar_
 Sat 07-Mar-2015
 Firefox upgraded from 24.0(?) to 31.5.0 (styled as "Firefox ESR" - extended support release)
 
-Sun 08-Mar-2015 1350h
+Sun 08-Mar-2015 135
 VLC installed from: http://slackware.org.uk/people/alien/restricted_slackbuilds/vlc/pkg64/14.1/
 installpkg vlc-2.2.0-x86_64-2alien.txz
 installpkg npapi-vlc-20150227-x86_64-1alien.txz
@@ -21,4 +21,12 @@ Sun 08-Mar-2015 1425h
 Flash player installed from: http://www.slackware.com/~alien/slackbuilds/flashplayer-plugin/pkg64/14.1/
 installpkg flashplayer-plugin-11.2.202.442-x86_64-1alien.txz
 
-
+Sun 08-Mar-2015 1845h
+XScreenSaver 5.29 (current version 5.22 from 2013 and bleats about being out of date)
+64-bit version from here: http://slackware.cs.utah.edu/pub/slackware/slackware64-14.1/source/xap/xscreensaver/
+is still 5.22.  Get hold of 5.29 (or later) from the 32-bit distro:
+http://slackware.cs.utah.edu/pub/slackware/slackware-current/source/xap/xscreensaver/
+then set xscreensaver.SlackBuild executable and run it - it will compile for a 64-bit environment.
+There is also a 64-bit source here:
+http://slackware.cs.utah.edu/pub/slackware/slackware64-current/source/xap/xscreensaver/
+though they are identical (checked through md5sum).
