@@ -6,8 +6,17 @@ Slackware 14.1 (64-bit) installed.  I did try Ubuntu 14.10 first from DVD using 
 Sat 07-Mar-2015 0100h
 WICD installed from...
 
+Sat 07-Mar-2015
+Firefox upgraded from 24.0(?) to 31.5.0 (styled as "Firefox ESR" - extended support release)
+
 Sun 08-Mar-2015 1350h
 VLC installed from: http://slackware.org.uk/people/alien/restricted_slackbuilds/vlc/pkg64/14.1/
+installpkg vlc-2.2.0-x86_64-2alien.txz
+installpkg npapi-vlc-20150227-x86_64-1alien.txz
+- this second package is a plugin for Mozilla-based browsers
 
+Sun 08-Mar-2015 1425h
+Flash player installed from: http://www.slackware.com/~alien/slackbuilds/flashplayer-plugin/pkg64/14.1/
+installpkg flashplayer-plugin-11.2.202.442-x86_64-1alien.txz
 
 
