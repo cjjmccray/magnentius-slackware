@@ -45,6 +45,13 @@ YouTube-dl: http://rg3.github.io/youtube-dl/download.html
 08-Mar-2015 2030
 R - from SlackBuild: http://slackbuilds.org/repository/14.1/academic/R/
 
-08-Mar-2015 tba
+08-Mar-2015 2130
+RStudio
+has dependencies:
+JDK: http://slackbuilds.org/repository/14.1/development/jdk/ & http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+and you've got to get JAVA_HOME set (will be rebooting to see if that fixes it)
+apache-ant: http://slackbuilds.org/repository/14.1/development/apache-ant/
+R-Studio Desktop: http://slackbuilds.org/repository/14.1/development/rstudio-desktop/
+
 get_iplayer: http://www.infradead.org/get_iplayer/html/get_iplayer.html
 RStudio
