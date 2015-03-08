@@ -30,3 +30,19 @@ then set xscreensaver.SlackBuild executable and run it - it will compile for a 6
 There is also a 64-bit source here:
 http://slackware.cs.utah.edu/pub/slackware/slackware64-current/source/xap/xscreensaver/
 though they are identical (checked through md5sum).
+Install using: upgradepkg xscreensaver-5.29-x86_64-2.txz (and rescue the .txz file from /tmp)
+
+08-Mar-2015 1930
+Firefox add-ons:
+Session Manager: https://addons.mozilla.org/en-us/firefox/addon/session-manager/
+Flash Block: https://addons.mozilla.org/en-us/firefox/addon/flashblock/
+Scrapbook: https://addons.mozilla.org/en-us/firefox/addon/scrapbook/
+Tree-Style Tab: https://addons.mozilla.org/en-us/firefox/addon/tree-style-tab/
+
+08-Mar-2015 1935
+YouTube-dl: http://rg3.github.io/youtube-dl/download.html
+
+08-Mar-2015 tba
+get_iplayer: http://www.infradead.org/get_iplayer/html/get_iplayer.html
+R
+RStudio
