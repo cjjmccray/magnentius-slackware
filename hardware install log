@@ -1,0 +1,28 @@
+Hardware Install Log
+
+28-Feb-2015 Machine purchased from eBay - £70 + £10 p&p
+http://www.ebay.co.uk/itm/111609859481
+
+28-Feb-2015 7.8Ah battery purchased - £22.99 (free p&p)
+http://www.ebay.co.uk/itm/271790667997
+
+05-Mar-2015 4Gb memory upgrade purchased and fitted Sat 07-Mar-2015 - £21.95 (free p&p)
+http://www.ebay.co.uk/itm/271790667997
+
+I also purchased a 1280 x 720 pixel screen - duff idea, the connector position on the back of the screen is wrong and the connector type is slightly different too.  In other words, the macine is fixed at a 1024 x 600 pixel screen.
+
+Old ViMicro webcam plugged-in but not showing as a videoX device (yet).  dmesg | tail has:
+
+bash-4.2# dmesg | tail
+[ 5574.638400] usbcore: registered new interface driver gspca_zc3xx
+[ 5844.947755] [Firmware Bug]: battery: (dis)charge rate invalid.
+[ 9152.872951] usb 2-1: USB disconnect, device number 2
+[10729.727664] usb 2-1: new full-speed USB device number 3 using ohci_hcd
+[10729.875702] usb 2-1: New USB device found, idVendor=0ac8, idProduct=303b
+[10729.875721] usb 2-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[10729.875730] usb 2-1: Product: PC Camera
+[10729.875738] usb 2-1: Manufacturer: Vimicro Corp.
+[10729.877825] gspca_main: gspca_zc3xx-2.14.0 probing 0ac8:303b
+[10730.143054] input: gspca_zc3xx as /devices/pci0000:00/0000:00:12.0/usb2/2-1/input/input15
+bash-4.2# 
+
