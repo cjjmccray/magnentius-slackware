@@ -4,7 +4,9 @@ Fri 06-Mar-2015 2100h
 Slackware 14.1 (64-bit) installed.  I did try Ubuntu 14.10 first from DVD using a USB-connected DVD drive and though it did boot to a Ubuntu screen and give the impression it was loading stuff off the disk, after 90 minutes or more, it still hadn't moved on from the opening screen with 4 animated 'lights' under the word 'Ubuntu', hence I switched to Slackware 14.1.  Install time approximately 2 hours (not really noted properly) using a normal full install from the DVD.
 
 Sat 07-Mar-2015 0100h
-WICD installed from...
+WICD installed from: http://ftp.slackware.com/pub/slackware/slackware64-14.1/extra/wicd/
+installpkg wicd-1.7.2.4-x86_64-4.txz
+and setup on home network, 3 main access points, 172ar_gnd, 172ar_mid and 172ar_top - 172ar_clr not done (yet)
 
 Sat 07-Mar-2015
 Firefox upgraded from 24.0(?) to 31.5.0 (styled as "Firefox ESR" - extended support release)
