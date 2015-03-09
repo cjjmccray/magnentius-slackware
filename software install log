@@ -53,5 +53,6 @@ and you've got to get JAVA_HOME set (will be rebooting to see if that fixes it)
 apache-ant: http://slackbuilds.org/repository/14.1/development/apache-ant/
 R-Studio Desktop: http://slackbuilds.org/repository/14.1/development/rstudio-desktop/
 
-09-Mar-2015 tba
+09-Mar-2015 0025
 get_iplayer: http://www.infradead.org/get_iplayer/html/get_iplayer.html
+and from SlackBuild: http://slackbuilds.org/repository/14.1/multimedia/get_iplayer/
