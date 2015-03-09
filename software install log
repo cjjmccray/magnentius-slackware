@@ -56,3 +56,6 @@ R-Studio Desktop: http://slackbuilds.org/repository/14.1/development/rstudio-des
 09-Mar-2015 0025
 get_iplayer: http://www.infradead.org/get_iplayer/html/get_iplayer.html
 and from SlackBuild: http://slackbuilds.org/repository/14.1/multimedia/get_iplayer/
+You need to run: cpan HTML::Entities
+(hinted from here: http://forum.vectorlinux.com/index.php?topic=10046.0)
+and let CPAN set itself up using loads of defaults.
