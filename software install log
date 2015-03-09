@@ -11,7 +11,7 @@ and setup on home network, 3 main access points, 172ar_gnd, 172ar_mid and 172ar_
 Sat 07-Mar-2015
 Firefox upgraded from 24.0(?) to 31.5.0 (styled as "Firefox ESR" - extended support release)
 
-Sun 08-Mar-2015 135
+Sun 08-Mar-2015 1350h
 VLC installed from: http://slackware.org.uk/people/alien/restricted_slackbuilds/vlc/pkg64/14.1/
 installpkg vlc-2.2.0-x86_64-2alien.txz
 installpkg npapi-vlc-20150227-x86_64-1alien.txz
@@ -32,20 +32,20 @@ http://slackware.cs.utah.edu/pub/slackware/slackware64-current/source/xap/xscree
 though they are identical (checked through md5sum).
 Install using: upgradepkg xscreensaver-5.29-x86_64-2.txz (and rescue the .txz file from /tmp)
 
-08-Mar-2015 1930
+08-Mar-2015 1930h
 Firefox add-ons:
 Session Manager: https://addons.mozilla.org/en-us/firefox/addon/session-manager/
 Flash Block: https://addons.mozilla.org/en-us/firefox/addon/flashblock/
 Scrapbook: https://addons.mozilla.org/en-us/firefox/addon/scrapbook/
 Tree-Style Tab: https://addons.mozilla.org/en-us/firefox/addon/tree-style-tab/
 
-08-Mar-2015 1935
+08-Mar-2015 1935h
 YouTube-dl: http://rg3.github.io/youtube-dl/download.html
 
-08-Mar-2015 2030
+08-Mar-2015 2030h
 R - from SlackBuild: http://slackbuilds.org/repository/14.1/academic/R/
 
-08-Mar-2015 2130-2355 (it took this long to compile all the pieces, especially R-Studio
+08-Mar-2015 2130h-2355h (it took this long to compile all the pieces, especially R-Studio)
 R-Studio
 has dependencies:
 JDK: http://slackbuilds.org/repository/14.1/development/jdk/ & http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
@@ -53,9 +53,20 @@ and you've got to get JAVA_HOME set (will be rebooting to see if that fixes it)
 apache-ant: http://slackbuilds.org/repository/14.1/development/apache-ant/
 R-Studio Desktop: http://slackbuilds.org/repository/14.1/development/rstudio-desktop/
 
-09-Mar-2015 0025
+09-Mar-2015 0025h-0110h
 get_iplayer: http://www.infradead.org/get_iplayer/html/get_iplayer.html
 and from SlackBuild: http://slackbuilds.org/repository/14.1/multimedia/get_iplayer/
 You need to run: cpan HTML::Entities
 (hinted from here: http://forum.vectorlinux.com/index.php?topic=10046.0)
 and let CPAN set itself up using loads of defaults.
+Then run:
+cpan HTTP::Cookies
+cpan LWP::ConnCache
+and don't forget rtmpdump and ffmpeg - downloaded as 14.1 64-bit packages from:
+http://slackware.org.uk/slacky/slackware64-14.1/multimedia/rtmpdump/2.3/
+http://www.slackware.com/~alien/slackbuilds/ffmpeg/pkg64/14.1/
+and for good measure I installed LAME:
+http://www.linuxfromscratch.org/blfs/view/svn/multimedia/lame.html
+
+
+
