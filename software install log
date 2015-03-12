@@ -11,8 +11,10 @@ WICD installed from: http://ftp.slackware.com/pub/slackware/slackware64-14.1/ext
 installpkg wicd-1.7.2.4-x86_64-4.txz
 and setup on home network, 3 main access points, 172ar_gnd, 172ar_mid and 172ar_top - 172ar_clr not done (yet)
 
+
 Sat 07-Mar-2015
 Firefox upgraded from 24.0(?) to 31.5.0 (styled as "Firefox ESR" - extended support release)
+
 
 Sun 08-Mar-2015 1350h
 VLC installed from: http://slackware.org.uk/people/alien/restricted_slackbuilds/vlc/pkg64/14.1/
@@ -20,9 +22,11 @@ installpkg vlc-2.2.0-x86_64-2alien.txz
 installpkg npapi-vlc-20150227-x86_64-1alien.txz
 - this second package is a plugin for Mozilla-based browsers
 
+
 Sun 08-Mar-2015 1425h
 Flash player installed from: http://www.slackware.com/~alien/slackbuilds/flashplayer-plugin/pkg64/14.1/
 installpkg flashplayer-plugin-11.2.202.442-x86_64-1alien.txz
+
 
 Sun 08-Mar-2015 1845h
 XScreenSaver 5.29 (current version 5.22 from 2013 and bleats about being out of date)
@@ -35,6 +39,7 @@ http://slackware.cs.utah.edu/pub/slackware/slackware64-current/source/xap/xscree
 though they are identical (checked through md5sum).
 Install using: upgradepkg xscreensaver-5.29-x86_64-2.txz (and rescue the .txz file from /tmp)
 
+
 08-Mar-2015 1930h
 Firefox add-ons:
 Session Manager: https://addons.mozilla.org/en-us/firefox/addon/session-manager/
@@ -42,11 +47,14 @@ Flash Block: https://addons.mozilla.org/en-us/firefox/addon/flashblock/
 Scrapbook: https://addons.mozilla.org/en-us/firefox/addon/scrapbook/
 Tree-Style Tab: https://addons.mozilla.org/en-us/firefox/addon/tree-style-tab/
 
+
 08-Mar-2015 1935h
 YouTube-dl: http://rg3.github.io/youtube-dl/download.html
 
+
 08-Mar-2015 2030h
 R - from SlackBuild: http://slackbuilds.org/repository/14.1/academic/R/
+
 
 08-Mar-2015 2130h-2355h (it took this long to compile all the pieces, especially R-Studio)
 R-Studio
@@ -55,6 +63,7 @@ JDK: http://slackbuilds.org/repository/14.1/development/jdk/ & http://www.oracle
 and you've got to get JAVA_HOME set (will be rebooting to see if that fixes it)
 apache-ant: http://slackbuilds.org/repository/14.1/development/apache-ant/
 R-Studio Desktop: http://slackbuilds.org/repository/14.1/development/rstudio-desktop/
+
 
 09-Mar-2015 0025h-0110h
 get_iplayer: http://www.infradead.org/get_iplayer/html/get_iplayer.html & sources: ftp://ftp.infradead.org/pub/get_iplayer/
@@ -72,4 +81,30 @@ and for good measure I installed LAME:
 http://www.linuxfromscratch.org/blfs/view/svn/multimedia/lame.html
 
 
+12-Mar-2015 1930h
+rdesktop: http://www.rdesktop.org/
+Compiled from scratch, with dependencies installed from SlackBuilds:
 
+libgssglue:
+http://canich.net/slackware/repo/13.37/l/slackbuilds/libgssglue/
+http://pkgs.fedoraproject.org/repo/pkgs/libgssglue/libgssglue-0.1.tar.gz/ce1b4c758e6de01b712d154c5c97e540/
+
+pcsc-lite:
+http://mirrors.nix.org.ua/linux/slackware-misc/slacky.eu/slackware64-14.0/system/pcsc-lite/1.8.7/
+
+pcsc-tools:
+http://slackware.org.uk/slacky/slackware64-13.37/system/pcsc-tools/1.4.17/
+http://pkgs.fedoraproject.org/repo/pkgs/pcsc-tools/pcsc-tools-1.4.17.tar.gz/2767238e1e737f94d13a91bdab1174ca/
+
+and it does connect to a home Windows XP box:
+rdesktop -u <user> -p <password> 192.168.1.29:3389
+make sure you run this as a regular user and not while su root - it fails with error:
+No protocol specified
+ERROR: Failed to open display: :0.0
+when run as root!
+
+
+12-Mar-2015 2000h
+pyopenssl (at some point I'll be playing with Python)
+pyopenssl:
+http://www.slackware.com/~alien/slackbuilds/pyopenssl/pkg64/14.1/
