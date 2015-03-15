@@ -108,3 +108,7 @@ when run as root!
 pyopenssl (at some point I'll be playing with Python)
 pyopenssl:
 http://www.slackware.com/~alien/slackbuilds/pyopenssl/pkg64/14.1/
+
+Sun 15-Mar-2015
+PuTTY: http://slackbuilds.org/repository/14.1/network/putty/
+
