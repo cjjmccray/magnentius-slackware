@@ -118,8 +118,10 @@ CUPS
 - set /etc/rc.d/rc.cups executable and start it (both su root)
 Brother HL2250DN driver
 - download the .deb file, extract using Ark (not sure how to do this at the terminal)
+- http://support.brother.com/g/s/id/linux/en/before.html?c=eu_ot&lang=en&prod=hl2250dn_eu_as&redirect=on#004
 - extract the tar-balls
 - go hunt for the .ppd file
 Problem... causes an internal server error
 - which I think is due to the PPD being a 32-bit app and Slackware out of the box is 64-bit only
-- so in
+- so install the 32-bit compat layer... with superb instructions from Alien Bob
+- http://www.slackware.com/~alien/multilib/
