@@ -199,3 +199,7 @@ Total found: 7
   6 : Personal Stuff
   7 : My Notebook
 bash-4.2$ 
+
+gnsync looks to be *really* useful:
+- http://www.geeknote.me/documentation/#gnsync-synchronization-app
+e.g. capture uptime etc..., output to a logfile and upload
