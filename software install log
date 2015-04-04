@@ -139,3 +139,47 @@ I've installed the 1.6 64-bit version and also installed/replaced the JAR fix to
 - http://sourceforge.net/p/nevernote/support-requests/21/
 This thread on the Evernote website explains a bit about a Linux/Evernote client (there isn't one)
 - https://discussion.evernote.com/topic/42393-evernote-for-linux/
+User manual:
+- https://www.evernote.com/shard/s1/res/862430dd-9d05-4a77-b2eb-9d8a124b290f/User%20Documentation.pdf
+(also downloaded to your documents folder)
+
+Geeknote
+- http://www.geeknote.me/install/
+Command-line control of Evernote?!  Ooh... that might be interesting...
+- http://stackoverflow.com/questions/14426491/python-3-importerror-no-module-named-setuptools
+Needs python setuptools to install, obtain from:
+- http://slackbuilds.org/repository/13.37/python/pysetuptools/
+Two-Factor Authentication Code question in geeknote login - just press Enter?
+
+bash-4.2$ geeknote login
+Login: cjjmccray@gmail.com              
+Password: 
+Two-Factor Authentication Code:         
+You have successfully logged in.        
+bash-4.2$ 
+
+Create a note example...
+
+bash-4.2$ geeknote create --title Geeknote test note --content The quick brown fox jumps over the lazy dog.\nJackdaws love my big sphinx of quartz.
+Unexpected argument "test" for command "create"
+Options for: create
+Available arguments:
+--resource : Add a resource to the note.
+    --tags : One tag or the list of tags which will be added to the note.
+ --content : The note content.
+--notebook : Set the notebook where to save note.
+   --title : The note title.
+bash-4.2$ geeknote create --title "Geeknote test note" --content The quick brown fox jumps over the lazy dog.\nJackdaws love my big sphinx of quartz.
+Unexpected argument "quick" for command "create"
+Options for: create
+Available arguments:
+--resource : Add a resource to the note.
+    --tags : One tag or the list of tags which will be added to the note.
+ --content : The note content.
+--notebook : Set the notebook where to save note.
+   --title : The note title.
+bash-4.2$ geeknote create --title "Geeknote test note" --content "The quick brown fox jumps over the lazy dog.\nJackdaws love my big sphinx of quartz."    
+Note has been successfully created.     
+bash-4.2$ 
+
+Which does work! Enclose title and note content text in "" and \n doesn't work (it comes through as '\n' in the text)
