@@ -125,3 +125,14 @@ Problem... causes an internal server error
 - which I think is due to the PPD being a 32-bit app and Slackware out of the box is 64-bit only
 - so install the 32-bit compat layer... with superb instructions from Alien Bob
 - http://www.slackware.com/~alien/multilib/
+
+
+Sat 28-Mar-2015/Sun 29-Mar-2015
+HP LaserJet 4050 printer - from CUPS/standard Slackware interface and prints OK.  Odd issue printing from Kate/KWrite - the margins are set slightly outside the printer's capability, so you lose part of the text on all sides.  Not tried with Calligra (yet).
+
+
+Sat 04-Apr-2015
+Nixnote/Nevernote - http://sourceforge.net/projects/nevernote/
+I've installed the 1.6 64-bit version and also installed/replaced the JAR fix to allow connection to your Evernote account:
+http://sourceforge.net/p/nevernote/support-requests/21/
+
