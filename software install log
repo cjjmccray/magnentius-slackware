@@ -147,9 +147,12 @@ Geeknote
 - http://www.geeknote.me/install/
 Command-line control of Evernote?!  Ooh... that might be interesting...
 - http://stackoverflow.com/questions/14426491/python-3-importerror-no-module-named-setuptools
-Needs python setuptools to install, obtain from:
+Needs python-setuptools to install properly, clue from here:
+- http://stackoverflow.com/questions/14426491/python-3-importerror-no-module-named-setuptools
+obtain SlackBuild and package from here:
 - http://slackbuilds.org/repository/13.37/python/pysetuptools/
-Two-Factor Authentication Code question in geeknote login - just press Enter?
+and move the package into the extracted SlackBuild folder, run the SlackBuild script (as root), and install the package from /tmp/ (or move it to keep it and then install).
+
 
 bash-4.2$ geeknote login
 Login: cjjmccray@gmail.com              
@@ -157,6 +160,7 @@ Password:
 Two-Factor Authentication Code:         
 You have successfully logged in.        
 bash-4.2$ 
+Two-Factor Authentication Code question in geeknote login - just press Enter?  Weird, it works.
 
 Create a note example...
 
@@ -183,3 +187,15 @@ Note has been successfully created.
 bash-4.2$ 
 
 Which does work! Enclose title and note content text in "" and \n doesn't work (it comes through as '\n' in the text)
+
+Other command examples - list notebooks:
+bash-4.2$ geeknote notebook-list
+Total found: 7                          
+  1 : First Notebook
+  2 : Chronometry
+  3 : Newport
+  4 : MetaPack
+  5 : General IT
+  6 : Personal Stuff
+  7 : My Notebook
+bash-4.2$ 
