@@ -203,3 +203,52 @@ bash-4.2$
 gnsync looks to be *really* useful:
 - http://www.geeknote.me/documentation/#gnsync-synchronization-app
 e.g. capture uptime etc..., output to a logfile and upload
+
+22-Feb-2017
+OpenVPN installed from the SlackBuild:
+https://slackbuilds.org/mirror/slackware/slackware-14.1/source/n/openvpn/
+
+To use is easy.  At a terminal:
+
+cd ~/NordVPN/ovpn
+su root
+openvpn se1.nordvpn.com.udp1194.ovpn
+
+(for the Swedish NordVPN node) and follow the instructions to login to NordVPN.
+
+Leave the terminal open, and while open you can use NordVPN's website to
+demonstrate you're behind a VPN.  To drop the VPN hit Ctrl-C to stop openvpn.
+
+NordVPN's instructions are bizarre - they don't work for anything other than
+Ubuntu:
+https://nordvpn.com/tutorials/linux/openvpn/
+
+23-Feb-2017 - CPU temperature monitoring
+CPU fan was belting out heat - tried figuring out installing psensor under
+Slackware but to no avail
+--- this Github repo has a SlackBuild
+    --- https://github.com/conraid/SlackBuilds/tree/master/psensor
+--- but it requires gtop, and I can't find anything that makes sense for that
+--- apart from a Slackware 8.1 SlackBuild:
+    --- http://mirrors.slackware.com/slackware/slackware-8.1/source/gnome/gtop/
+--- there is a Slackware 14.2 package:
+    --- https://slackware.pkgs.org/14.2/slackers/psensor-1.2.0-x86_64-1cf.txz.html
+--- which will install under Slackware 14.1 but doesn't run as it needs Gtop2
+
+Might be worth returning to this, installing the Slackware 8.1 gtop and see what happens.
+
+Or... upgrade resintall) to Slackware 14.2 - a 4.4 kernel awaits (14.1 uses a 3.1 kernel).
+
+And inthe mean time, just use 'sensors' at a terminal:
+
+bash-4.2$ sensors
+k10temp-pci-00c3
+Adapter: PCI adapter
+temp1:        +80.4°C  (high = +70.0°C)
+                       (crit = +115.0°C, hyst = +107.5°C)
+
+radeon-pci-0008
+Adapter: PCI adapter
+temp1:        +80.0°C  
+
+bash-4.2$ 
